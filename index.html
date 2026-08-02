@@ -111,6 +111,19 @@
   .statement{padding:130px 0;background:var(--cream);color:var(--ink);}
   .statement .frame{display:grid;grid-template-columns:.8fr 1.6fr;gap:5vw;}
   .s-label{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#a8813a;padding-top:10px;}
+  .timeline{margin-top:56px;position:relative;padding-left:24px;}
+  .timeline::before{
+    content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1px;
+    background:linear-gradient(to bottom, var(--gold), rgba(168,129,58,.15));
+  }
+  .timeline-item{position:relative;margin-bottom:40px;}
+  .timeline-item:last-child{margin-bottom:0;}
+  .timeline-item::before{
+    content:"";position:absolute;left:-24px;top:4px;width:9px;height:9px;border-radius:50%;
+    background:var(--gold);box-shadow:0 0 0 4px var(--cream);
+  }
+  .timeline-item .yr{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a8813a;font-weight:600;margin-bottom:5px;}
+  .timeline-item .lbl{font-size:14.5px;color:#3c4657;line-height:1.4;}
   .statement p{font-size:19px;max-width:620px;}
   .statement p+p{margin-top:22px;}
   .statement .lede{
@@ -247,6 +260,7 @@
         </div>
         <div class="hero-actions">
           <a class="btn btn-gold" href="https://cal.com/sukantratnakar/coffee-conversations" target="_blank" rel="noopener">Book a Conversation</a>
+          <a class="btn btn-line" href="https://www.linkedin.com/in/sukant/" target="_blank" rel="noopener">Connect on LinkedIn</a>
           <a class="btn btn-line" href="#book">Latest Book</a>
         </div>
       </div>
@@ -260,14 +274,20 @@
 <section class="statement reveal">
   <div class="frame">
     <div class="s-label">About</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="yr">1989</div><div class="lbl">Shop floor</div></div>
+      <div class="timeline-item"><div class="yr">—</div><div class="lbl">Boardroom</div></div>
+      <div class="timeline-item"><div class="yr">2016</div><div class="lbl">Consulting, full-time</div></div>
+    </div>
     <div>
       <p class="lede">Walk into a room without the assumptions everyone else already carries, and the picture usually looks different.</p>
       <p>That habit started on a shop floor in 1989 and reached the boardroom before Sukant moved into consulting full-time in 2016 — work that has since taken him across Asia, North America, and Europe. He holds the Certified Management Consultant designation, an MSc in Strategic Planning from Edinburgh Business School, Heriot-Watt University, and has written for the CMC newsletter for the past four years.</p>
       <div class="fields">
-        <span>Change Management</span>
+        <span>Evolution &amp; Change Management</span>
         <span>White Space Thinking</span>
         <span>Perspective Thinking</span>
         <span>Energy Management</span>
+        <span>Power of Observation</span>
         <span>Organizational Culture</span>
       </div>
     </div>
@@ -353,6 +373,7 @@
       <a href="https://changeanesthesiology.com" target="_blank" rel="noopener">Change Anesthesiology</a>
       <a href="https://systovation.com" target="_blank" rel="noopener">Systovation</a>
       <a href="https://quantraz.com" target="_blank" rel="noopener">Quantraz</a>
+      <a href="https://www.linkedin.com/in/sukant/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:sukant@quantraz.com">Email</a>
     </div>
     <div>© 2026 Sukant Ratnakar</div>
